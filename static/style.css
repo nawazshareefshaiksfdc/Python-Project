@@ -1,115 +1,134 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-size: 62.5%;
-  }
-  .app-container {
-    width: 90%;
-    height: 90vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app_heading {
+  font-size: 24px;
+  width: 98%;
+  background: black;
+  color: white;
+  margin: 10px auto 0px;
+  line-height: 48px;
+  padding-left: 10px;
+}
+.app_main-container {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  height: 84vh;
+}
+
+.app_left-container {
+    width: 70%;
+    height: 95%;
     background: white;
-    border: 5px solid black;
-    border-radius: 10px;
-    margin: 10px auto;
-}
-  .app-heading {
-    font-size: 1.6rem;
-    position: relative;
-    top: -1px;
-    background-color: black;
-    color: white;
-    padding-left: 10px;
-    line-height: 46px;
-  }
-  .data-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .input-container {
-    width: 50%;
-    height: 100%;
-  }
-  .output-container {
-    width: 50%;
-    height: 100%;
-  }
-  .input-heading {
-    font-size: 1.4rem;
-    margin: 10px;
-  }
-  .input-query-container {
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-  }
-  .input-query {
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 300px;
-    height: 40px;
-    line-height: 20px;
-    cursor: text;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-}
-  .input-submit-btn {
-    color: white;
-    background: blue;
-    width: 20%;
-    height: 20vh;
-    text-align: center;
-    font-size: 1.6rem;
-    line-height: 100px;
-    cursor: pointer;
-  }
-  .input-submit-btn:hover {
-    background: green;
-  }
-  .input-submit-btn:active {
-    background: red;
-  }
-  .gpt-response {
-    width: 90%;
-    border: 2px solid black;
-    margin: 0 auto;
-    height: 30%;
-  }
-  .output-container {
+    border-right: 2px solid grey;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    gap: 12px;
-    margin-top: 20px;
+    justify-content: center;
 }
-.lang-container {
-    width: 80%;
-    height: 5vh;
+.app_input-container {
+  width: 92%;
+  height: 35%;
+  margin: 0 auto;
+}
+.app_input {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.app_data-heading {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 900;
+}
+.app_data-input {
+  font-size:16px;
+  width: 78%;
+  height: 15vh;
+  background-color: skyblue;
+  border: 2px solid black;
+  padding:10px;
+}
+ .app_data-btn {
+            width: 20%;
+            color: white;
+            height: 15vh;
+            background: rebeccapurple;
+            text-align: center;
+            font-size: 20px;
+            line-height: 15vh; 
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            outline: none;
+        }
+.app_data-btn:hover {
+  background:blue;
+}
+.app_data-btn:active {
+  background:seagreen;
 }
 
-#language{
-    padding: 5px 30px;
-    font-size: 1rem;
+.app_output-container {
+  font-size:16px;
+  width: 92%;
+  height: 50vh;
+  background-color: skyblue;
+  margin: 0px auto;
+  border: 2px solid black;
+padding: 10px;
 }
-  .concepts-container, .sol-container , .comments-container {
-    width: 80%;
-    height: 20vh;
-    border:2px solid black;
-    border-radius: 10px;
-  }
 
-  .drop-down_label {
-    font-size: 1.2rem;
-  }
+.app_right-container {
+  width: 30%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+}
+.app_drop-down-heading {
+    width: 90%;
+    font-weight: 900;
+    font-size: 18px;
+    margin: 10px auto 5px;
+}
+.app_drop-down {
+  width: 90%;
+/*   border: 2px solid black; */
+  margin: 0 auto;
+  height: 8vh;
+/*   background:skyblue; */
+}
 
-  .drop-down_value {
-    font-size: 1rem;
-  }
+.app_code-container,
+.app_concept-container,
+.app_comment-container {
+  width: 90%;
+  height: 18vh;
+  border: 2px solid black;
+  margin: 0 auto;
+  background:skyblue;
+  padding:5px;
+}
+
+#language {
+    width: 100%;
+    font-size: 18px;
+    line-height: 24px;
+    height: 7vh;
+}
+
+textarea{
+  resize:none;
+}
