@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 62.5%;
+  }
+  .app-container {
+    width: 90%;
+    height: 90vh;
+    background: white;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+  .app-heading {
+    font-size: 1.6rem;
+    position: relative;
+    top: -1px;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    line-height: 46px;
+  }
+  .data-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .input-container {
+    width: 50%;
+    height: 100%;
+  }
+  .output-container {
+    width: 50%;
+    height: 100%;
+  }
+  .input-heading {
+    font-size: 1.4rem;
+    margin: 10px;
+  }
+  .input-query-container {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .input-query {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    height: 40px;
+    line-height: 20px;
+    cursor: text;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+  .input-submit-btn {
+    color: white;
+    background: blue;
+    width: 20%;
+    height: 20vh;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 100px;
+    cursor: pointer;
+  }
+  .input-submit-btn:hover {
+    background: green;
+  }
+  .input-submit-btn:active {
+    background: red;
+  }
+  .gpt-response {
+    width: 90%;
+    border: 2px solid black;
+    margin: 0 auto;
+    height: 30%;
+  }
+  .output-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-top: 20px;
+}
+.lang-container {
+    width: 80%;
+    height: 5vh;
+}
+
+#language{
+    padding: 5px 30px;
+    font-size: 1rem;
+}
+  .concepts-container, .sol-container , .comments-container {
+    width: 80%;
+    height: 20vh;
+    border:2px solid black;
+    border-radius: 10px;
+  }
+
+  .drop-down_label {
+    font-size: 1.2rem;
+  }
+
+  .drop-down_value {
+    font-size: 1rem;
+  }
